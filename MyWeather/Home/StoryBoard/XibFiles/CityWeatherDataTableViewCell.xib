@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityWeatherDataTableViewCell" rowHeight="254" id="KGk-i7-Jjw" customClass="CityWeatherDataTableViewCell" customModule="MyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="254"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="254"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdn-6e-aC2">
+                        <rect key="frame" x="0.0" y="0.0" width="422" height="254"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igK-I4-w46">
+                                <rect key="frame" x="42.333333333333343" y="20" width="337.33333333333326" height="42"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOX-d6-hUT">
+                                <rect key="frame" x="42.333333333333343" y="77" width="337.33333333333326" height="25.333333333333329"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6d-Wf-Pt3">
+                                <rect key="frame" x="179.33333333333334" y="122.33333333333331" width="63.666666666666657" height="84"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-Yn-M2L">
+                                <rect key="frame" x="354" y="183" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7ze-Yn-M2L" secondAttribute="height" multiplier="1:1" id="75g-SG-1sa"/>
+                                    <constraint firstAttribute="height" constant="60" id="td5-4F-nbo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19-03-2023, 10:56 PM, Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0p-I1-67L">
+                                <rect key="frame" x="108.00000000000001" y="220.33333333333334" width="206.33333333333337" height="22.666666666666657"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.42695046768707484" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A0p-I1-67L" firstAttribute="top" secondItem="z6d-Wf-Pt3" secondAttribute="bottom" constant="14.000000000000028" id="27V-7k-xL4"/>
+                            <constraint firstAttribute="bottom" secondItem="7ze-Yn-M2L" secondAttribute="bottom" constant="11" id="EmL-Cx-LgP"/>
+                            <constraint firstAttribute="trailing" secondItem="7ze-Yn-M2L" secondAttribute="trailing" constant="8" id="Hat-mj-FvS"/>
+                            <constraint firstItem="A0p-I1-67L" firstAttribute="centerX" secondItem="z6d-Wf-Pt3" secondAttribute="centerX" id="NIe-nV-Nny"/>
+                            <constraint firstItem="igK-I4-w46" firstAttribute="width" secondItem="rdn-6e-aC2" secondAttribute="width" multiplier="0.8" id="NMm-vX-Pq3"/>
+                            <constraint firstItem="z6d-Wf-Pt3" firstAttribute="centerX" secondItem="IOX-d6-hUT" secondAttribute="centerX" id="dSs-sa-cb3"/>
+                            <constraint firstItem="igK-I4-w46" firstAttribute="top" secondItem="rdn-6e-aC2" secondAttribute="top" constant="20" symbolic="YES" id="fiy-4y-JKz"/>
+                            <constraint firstItem="z6d-Wf-Pt3" firstAttribute="top" secondItem="IOX-d6-hUT" secondAttribute="bottom" constant="20" id="jCJ-B3-pl7"/>
+                            <constraint firstItem="A0p-I1-67L" firstAttribute="bottom" secondItem="7ze-Yn-M2L" secondAttribute="bottom" id="jhC-On-KRf"/>
+                            <constraint firstItem="A0p-I1-67L" firstAttribute="width" relation="greaterThanOrEqual" secondItem="rdn-6e-aC2" secondAttribute="width" multiplier="0.4" id="q87-Sc-eCX"/>
+                            <constraint firstItem="IOX-d6-hUT" firstAttribute="width" secondItem="rdn-6e-aC2" secondAttribute="width" multiplier="0.8" id="tcR-FU-pne"/>
+                            <constraint firstItem="IOX-d6-hUT" firstAttribute="top" secondItem="igK-I4-w46" secondAttribute="bottom" constant="15" id="vgm-0I-jyq"/>
+                            <constraint firstItem="IOX-d6-hUT" firstAttribute="centerX" secondItem="igK-I4-w46" secondAttribute="centerX" id="ylP-Ae-bH9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rdn-6e-aC2" secondAttribute="trailing" id="2K6-wn-vpZ"/>
+                    <constraint firstAttribute="bottom" secondItem="rdn-6e-aC2" secondAttribute="bottom" id="CkG-1Z-zHq"/>
+                    <constraint firstItem="igK-I4-w46" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Pfb-Jw-kcz"/>
+                    <constraint firstItem="rdn-6e-aC2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WU9-tt-sOz"/>
+                    <constraint firstItem="rdn-6e-aC2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="scN-OX-r3c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgAtmosphere" destination="7ze-Yn-M2L" id="5xF-qf-Eyj"/>
+                <outlet property="lblAtmosphere" destination="IOX-d6-hUT" id="5gq-Oo-Nhq"/>
+                <outlet property="lblCityName" destination="igK-I4-w46" id="OYI-Yp-56a"/>
+                <outlet property="lblDateTime" destination="A0p-I1-67L" id="jF6-kY-bc8"/>
+                <outlet property="lblTemprature" destination="z6d-Wf-Pt3" id="UjO-6t-tMF"/>
+            </connections>
+            <point key="canvasLocation" x="236.92307692307691" y="63.270142180094787"/>
+        </tableViewCell>
+    </objects>
+</document>
