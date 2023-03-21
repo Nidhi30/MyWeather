@@ -48,7 +48,8 @@ class CityWeatherDataTableViewCell: UITableViewCell {
             }
         }
         if let temprature = weatherData.main?.temp {
-            lblTemprature.text = String(describing: "\(temprature)" + "°K")
+            let temp =  (temprature - 273.15) * 1.8 + 32
+            lblTemprature.text = String(format: "%.2f", temp) + " °F"
         }
 
         if let date = weatherData.dt {

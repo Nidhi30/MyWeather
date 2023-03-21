@@ -42,7 +42,7 @@ private extension HomeViewController {
         image = image?.withRenderingMode(.alwaysOriginal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(searchCity))
         self.navigationItem.hidesBackButton = true;
-        self.navigationItem.title = NSLocalizedString("Wether Information", comment: "")
+        self.navigationItem.title = NSLocalizedString("Weather Information", comment: "")
         tblWeatherData.register(CityWeatherDataTableViewCell.nib(), forCellReuseIdentifier: CityWeatherDataTableViewCell.identifire)
     }
     
