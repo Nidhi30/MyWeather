@@ -27,7 +27,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setUpUI()
         setUpModels()
-        homeViewModel?.getLocalCityName()
+        if homeViewModel?.locality == "" {
+            homeViewModel?.getLocalCityName()
+        }
     }
 }
 
